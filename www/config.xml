@@ -1,0 +1,15 @@
+<widget id="com.WidgetCorp.WidgetApp" version="1.1.0">
+    <name>WidgetApp</name>
+    <description>
+        Dem widgets
+    </description>
+    <author email="mike@mcarter.me" href="http://mcarter.me">
+        WidgetCorp team
+    </author>
+    <content src="cordova.html" />
+    <access origin="*" />
+    <preference name="Fullscreen" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="Orientation" value="portrait" />
+</widget>

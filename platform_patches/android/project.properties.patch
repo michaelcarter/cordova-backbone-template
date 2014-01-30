@@ -1,0 +1,8 @@
+--- project.properties	2014-01-02 14:59:48.000000000 +0000
++++ project.properties2	2014-01-02 15:05:02.000000000 +0000
+@@ -11,4 +11,4 @@
+ #proguard.config=${sdk.dir}/tools/proguard/proguard-android.txt:proguard-project.txt
+ 
+ # Project target.
+-target=android-17
++target=android-19

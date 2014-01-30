@@ -1,0 +1,14 @@
+www/*
+!www/config.xml
+
+components/*
+platforms/*
+node_modules/*
+plugins/*
+Databases.db
+instrumentscli*
+
+.settings
+.project
+.DS_Store
+.*.md.html

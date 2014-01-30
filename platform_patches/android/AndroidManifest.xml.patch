@@ -1,0 +1,45 @@
+--- AndroidManifest.xml	2014-01-27 20:45:15.000000000 +0000
++++ AndroidManifest2.xml	2014-01-27 20:48:12.000000000 +0000
+@@ -1,15 +1,38 @@
+ <?xml version='1.0' encoding='utf-8'?>
+ <manifest android:hardwareAccelerated="true" android:versionCode="1" android:versionName="1.0.3" android:windowSoftInputMode="adjustPan" package="com.HolidayExtras.Tripapp" xmlns:android="http://schemas.android.com/apk/res/android">
+-    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
++    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="false" />
++    <compatible-screens>
++        <screen android:screenDensity="ldpi" android:screenSize="small" />
++        <screen android:screenDensity="mdpi" android:screenSize="small" />
++        <screen android:screenDensity="hdpi" android:screenSize="small" />
++        <screen android:screenDensity="xhdpi" android:screenSize="small" />
++        <screen android:screenDensity="480" android:screenSize="small" />
++        <screen android:screenDensity="ldpi" android:screenSize="normal" />
++        <screen android:screenDensity="mdpi" android:screenSize="normal" />
++        <screen android:screenDensity="hdpi" android:screenSize="normal" />
++        <screen android:screenDensity="xhdpi" android:screenSize="normal" />
++        <screen android:screenDensity="480" android:screenSize="normal" />
++        <screen android:screenDensity="ldpi" android:screenSize="large" />
++        <screen android:screenDensity="mdpi" android:screenSize="large" />
++        <screen android:screenDensity="hdpi" android:screenSize="large" />
++        <screen android:screenDensity="xhdpi" android:screenSize="large" />
++        <screen android:screenDensity="480" android:screenSize="large" />
++    </compatible-screens>
+     <uses-permission android:name="android.permission.INTERNET" />
+-    <application android:debuggable="true" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name">
+-        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/app_name" android:name="HolExtras" android:theme="@android:style/Theme.Black.NoTitleBar">
++    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="Holiday Extras">
++        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="Holiday Extras" android:name="HolExtras" android:screenOrientation="sensorPortrait" android:theme="@android:style/Theme.DeviceDefault">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>
++        <service android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
++        <receiver android:exported="true" android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver">
++            <intent-filter>
++                <action android:name="com.android.vending.INSTALL_REFERRER" />
++            </intent-filter>
++        </receiver>
+     </application>
+-    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ </manifest>

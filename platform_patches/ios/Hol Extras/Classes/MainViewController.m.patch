@@ -1,0 +1,11 @@
+--- platforms/ios/Hol Extras/Classes/MainViewController.m	2013-12-20 11:28:59.000000000 +0000
++++ /tmp/MainViewController.m	2013-12-20 11:26:42.000000000 +0000
+@@ -104,7 +104,7 @@
+ - (void)webViewDidFinishLoad:(UIWebView*)theWebView
+ {
+     // Black base color for background matches the native apps
+-    theWebView.backgroundColor = [UIColor blackColor];
++    theWebView.backgroundColor = [UIColor whiteColor];
+ 
+     return [super webViewDidFinishLoad:theWebView];
+ }
