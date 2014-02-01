@@ -24,7 +24,7 @@ config = (grunt) ->
     default:
       options:
         "no-write": true
-      src: ["!www/config.xml", "!www/js/vendor/*.js", "!www/js/spec/index.html", "!www/js/spec/lib/*.js", "www/*"]
+      src: ["!www/config.xml", "www/*"]
 
 
   coffee:
