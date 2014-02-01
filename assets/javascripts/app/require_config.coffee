@@ -3,7 +3,7 @@ require.config
 
   paths:
     'backbone'   : '../../../components/backbone/backbone'
-    'underscore' : '../../../components/lodash/dist/lodash'
+    'underscore' : '../../../components/underscore/underscore'
     'jquery'     : '../../../components/jquery/jquery'
 
   shim:
