@@ -61,12 +61,12 @@ config = (grunt) ->
         out: 'www/js/cordova.js'
         optimize: 'uglify2'
         wrap: false
-        preserveLicenseComments: false
         almond: true
+        preserveLicenseComments: false
 
   htmlbuild:
     dist:
-      src: ['assets/public/index.html', 'assets/public/cordova.html', 'assets/public/web.html']
+      src: ['assets/public/index.html', 'assets/public/cordova.html']
       dest: 'www/'
       options:
         beautify: true
@@ -86,7 +86,7 @@ config = (grunt) ->
 
 module.exports = (grunt) ->
 
-  grunt.initConfig( config(grunt) )
+  grunt.initConfig(config(grunt))
 
   grunt.loadNpmTasks('grunt-requirejs')
   grunt.loadNpmTasks('grunt-contrib-coffee')
