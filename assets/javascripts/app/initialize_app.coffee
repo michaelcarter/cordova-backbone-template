@@ -1,4 +1,11 @@
 require [
-  'views/main_cordova_view'
-], (MainCordovaView) ->
-  window.app = new MainCordovaView
+  'views/widget_view'
+], (WidgetView) ->
+
+  startApp = ->
+    window.app = new WidgetView
+
+  if !!window.Cordova
+    document.addEventListener("deviceready", startApp, false)
+  else
+    startApp()
