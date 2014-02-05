@@ -98,17 +98,11 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-contrib-connect')
   grunt.loadNpmTasks('grunt-html-build')
 
-  grunt.registerTask('js', ['requirejs'])
-
-  grunt.registerTask('css', [
-    'less'
-    'cssmin'
-  ])
-
-  grunt.registerTask('default', [
+  grunt.registerTask('build', [
     'coffee'
     'requirejs'
-    'css'
+    'less'
+    'cssmin'
     'htmlbuild'
   ])
 

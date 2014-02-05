@@ -15,8 +15,8 @@ define (require, exports, module) ->
     isn't really used as a view at all. You'll want to replace all Backbone code in
     this project with your own, it only exists to show you how requiring various
     components in the application work together and it not intended to be an example
-    of a well structured or well built application, that's up to you, as it's not
-    something Backbone really prescribes.
+    of a well structured or well built application. A sensible application architecture
+    # is up to you, as it's not something Backbone really prescribes.
   ###
 
   class WidgetApp extends Backbone.View
