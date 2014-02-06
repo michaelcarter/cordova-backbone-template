@@ -109,6 +109,10 @@ If you don't want to use coffeescript, you can replace the `coffee` task in your
 
 For more info, see the [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) project, or copy and modify an existing `copy` task from this project's gruntfile.
 
+## Projects built from this template
+
+* [The Holiday Extras App](https://play.google.com/store/apps/details?id=com.HolidayExtras.Tripapp)
+
 ## Thanks
 
 Major thanks to [Sam Breed](https://twitter.com/sambreed) of [QuickLeft](http://quickleft.com/)for bringing us up to speed on all things Cordova. If you're looking for a more minimal template you should definitely check out their [cordova-project-template](https://github.com/quickleft/cordova-project-template) repository.
