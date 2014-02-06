@@ -3,6 +3,7 @@ www/*
 
 components/*
 platforms/*
+!platforms/gitinclude
 node_modules/*
 plugins/*
 Databases.db
