@@ -4,18 +4,18 @@
 
 This goal of this repository is to jump start you past all the complexity of setting up a Cordova app and project workflow. You should be able to download, compile and run the project on iOS or Android in a few commands, and easily get developing and making changes using JavasScript and Backbone.js straight away.
 
-I've chosen Backbone for this template project as it's **1.** simple, **2.** well documented, **3.** widely used and **4.** not too heavily prescribed in terms of application architecture/best practices. It's also what I'm most familiar with...
+We've chosen Backbone for this template project as it's **1.** simple, **2.** well documented, **3.** widely used and **4.** not too heavily prescribed in terms of application architecture/best practices. It's also what I'm most familiar with...
 
-As it comes, this project also uses Coffeescript (which is auto-converted to JS by a grunt task) because *I* feel it's nicer to write object-oriented web applications in. If you don't want to use it, see the section below on removing it.
+As it comes, this project also uses Coffeescript (which is auto-converted to JS by a grunt task) because we feel it's nicer to write object-oriented web applications in. If you don't want to use it, see the section below on removing it.
 
 ## Installation/Running
 
 ### Other Dependencies
  * For iOS releases, [XCode](https://developer.apple.com/xcode/), and the Xcode Command Line Tools (Google for loads instructions on installing these)
  * For Android releases, [The Android SDK](http://developer.android.com/sdk/index.html)
- * NodeJS (http://nodejs.org/)
+ * [NodeJS](http://nodejs.org/)
  
- With these, you should be able to run the following commands to get the included sample project up and running.
+With these, you should be able to run the following commands to get the included sample project up and running.
 
 ### Running on a device or simulator
 
@@ -27,34 +27,34 @@ npm install
 bower install
 ```
 
-Getting our app ready for compilation:
+Getting your app ready for compilation:
 
 ```
 grunt build
 ```
 
-Adding our ios or android platforms:
+Adding your ios or android platforms:
 
 ```
 cordova platforms add ios
 cordova platforms add android
 ```
 
-Building our application for ios or android:
+Building your application for ios or android:
 
 ```
 cordova build ios
 cordova build android
 ```
 
-Running our app in an ios or android simulator:
+Running your app in an ios or android simulator:
 
 ``` 
 cordova emulate ios
 cordova emulate android
 ```
 
-Running our app on a physical device:
+Running your app on a physical device:
 
 ```
 cordova run ios
@@ -108,3 +108,7 @@ For any bower components you want to use in your project, you'll need to configu
 If you don't want to use coffeescript, you can replace the `coffee` task in your project's `Gruntfile.coffee` with a `copy` task to copy across your .js files instead.
 
 For more info, see the [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) project, or copy and modify an existing `copy` task from this project's gruntfile.
+
+## Thanks
+
+Major thanks to [Sam Breed](https://twitter.com/sambreed) of [QuickLeft](http://quickleft.com/)for bringing us up to speed on all things Cordova. If you're looking for a more minimal template you should definitely check out their [cordova-project-template](https://github.com/quickleft/cordova-project-template) repository.
