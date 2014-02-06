@@ -5,7 +5,8 @@ components/*
 platforms/*
 !platforms/gitinclude
 node_modules/*
-plugins/*
+plugins/
+!plugins/gitinclude
 Databases.db
 instrumentscli*
 
