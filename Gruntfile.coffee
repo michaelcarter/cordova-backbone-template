@@ -107,6 +107,6 @@ module.exports = (grunt) ->
   ])
 
   grunt.registerTask('server', [
-    'js'
+    'coffee'
     'connect:web'
   ])
