@@ -1,5 +1,7 @@
 www/*
 !www/config.xml
+!www/js/spec/lib/*.js
+!www/js/spec/index.html
 
 components/*
 platforms/*
