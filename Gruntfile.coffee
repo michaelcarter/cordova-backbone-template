@@ -24,7 +24,7 @@ config = (grunt) ->
     default:
       options:
         "no-write": true
-      src: ["!www/config.xml", "www/*"]
+      src: ["!www/config.xml", "!www/js/spec/index.html", "!www/js/spec/lib/*.js", "www/*"]
 
 
   coffee:
@@ -71,6 +71,11 @@ config = (grunt) ->
       options:
         beautify: true
 
+  mocha_phantomjs:
+    options:
+      reporter: 'dot'
+    nerds: ['www/js/spec/index.html']
+
   watch:
     coffee:
       files: ['assets/javascripts/**']
@@ -96,6 +101,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-contrib-cssmin')
   grunt.loadNpmTasks('grunt-contrib-connect')
+  grunt.loadNpmTasks('grunt-mocha-phantomjs')
   grunt.loadNpmTasks('grunt-html-build')
 
   grunt.registerTask('build', [
@@ -109,4 +115,8 @@ module.exports = (grunt) ->
   grunt.registerTask('server', [
     'coffee'
     'connect:web'
+  ])
+
+  grunt.registerTask('test', [
+    'mocha_phantomjs'
   ])
