@@ -35,6 +35,12 @@ Getting your app ready for compilation:
 grunt build
 ```
 
+Running your tests:
+
+```
+grunt test
+```
+
 Adding your ios or android platforms:
 
 ```
@@ -77,9 +83,17 @@ This will watch the assets folder for code changes, and convert/copy your coffee
 ```
 grunt server
 ```
-Runs a HTTP server on port 5000 to server up what's in your `www` folder. You can run your app in-browser at `http://localhost:5000`.
+Runs a HTTP server on port 5000 to server up what's in your `www` folder. You can run your app in-browser at `http://localhost:5000`, or run your tests at `http://localhost:5000/js/spec`.
 
 With these two tasks running, code changes you make in `assets` are ready to view in a matter of seconds, meaning you don't have to manually re-compile or re-deploy to a device to view your work.
+
+### Running your tests
+
+The default template includes a couple of very basic Mocha/Chai/Sinon tests to get you going, you'll find these in `assets/javascripts/spec`, and they can be run with the `grunt test` command. When adding new test files, be sure to include them in `assets/javascripts/spec/app_spec.coffee` or they will not be run. 
+
+Your tests are converted from coffeescript to javascript the same way your application code is, so be sure to keep your `grunt watch` task running while working on them, or run `grunt build` before you run them each time to see changes. 
+
+With `grunt server` running, you can also access your tests at `http://localhost:5000/js/spec`.
 
 ### Technologies/Libraries used in the vanilla template
 
@@ -90,6 +104,9 @@ With these two tasks running, code changes you make in `assets` are ready to vie
  * JQuery
  * Underscore
  * HammerJS
+ * Mocha
+ * Chai
+ * Sinon
 
 ### Adding new libraries
 
