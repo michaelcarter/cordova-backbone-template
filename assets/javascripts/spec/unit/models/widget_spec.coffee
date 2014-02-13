@@ -13,6 +13,7 @@ define (require, exports, module) ->
     before ->
       @widget = new Widget
 
+
     describe "A simple test", ->
 
       describe "fooBar()", ->

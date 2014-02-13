@@ -7,4 +7,3 @@ dependencies = ['chai', 'sinonChai'].concat(specUnit)
 define dependencies, (chai, sinonChai) ->
   chai.should()
   chai.use(sinonChai)
-
