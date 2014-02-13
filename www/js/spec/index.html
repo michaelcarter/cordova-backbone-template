@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../components/mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="../../../components/mocha/mocha.js"></script>
+    <script src="lib/sinon-1.7.1.js"></script>
+    <script>
+      mocha.ui('bdd');
+      mocha.reporter('html');
+    </script>
+    <script data-main="require_config" src="../../../components/requirejs/require.js"></script>
+  </body>
+</html>
