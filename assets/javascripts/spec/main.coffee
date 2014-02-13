@@ -1,5 +1,5 @@
 define [
-  'spec/tripapp_spec'
+  'spec/app_spec'
 ], ->
   if window.mochaPhantomJS
     window.mochaPhantomJS.run()
