@@ -1,0 +1,11 @@
+language: javascript
+cache:
+  directories:
+  - node_modules
+  - components
+install:
+- npm install --production
+- bower install
+script:
+- grunt build
+- grunt test
