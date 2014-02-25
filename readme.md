@@ -1,5 +1,7 @@
 # Cordova Backbone Template (v0.2.1)
 
+[![Build Status](https://travis-ci.org/holidayextras/cordova-backbone-template.png)](https://travis-ci.org/holidayextras/cordova-backbone-template)
+
 ## What is it?
 
 This goal of this repository is to jump start you past all the complexity of setting up a Cordova app and project workflow. You should be able to download, compile and run the project on iOS or Android in a few commands, and easily get developing and making changes using JavasScript and Backbone.js straight away.
