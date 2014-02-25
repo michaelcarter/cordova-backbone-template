@@ -104,6 +104,8 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-mocha-phantomjs')
   grunt.loadNpmTasks('grunt-html-build')
 
+  grunt.registerTask('default', ['build'])
+
   grunt.registerTask('build', [
     'coffee'
     'requirejs'

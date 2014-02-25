@@ -1,4 +1,4 @@
-# Cordova Backbone Template (v0.2.1)
+# Cordova Backbone Template (v0.2.2)
 
 ## What is it?
 
