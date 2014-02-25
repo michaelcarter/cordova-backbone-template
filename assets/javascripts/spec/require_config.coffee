@@ -8,7 +8,7 @@ require.config
     'hammer'          : '../../../components/hammerjs/dist/jquery.hammer'
     'backbone-hammer' : '../../../components/backbone.hammer/backbone.hammer'
     'underscore'      : '../../../components/lodash/dist/lodash'
-    'jquery'          : '../../../components/jquery/jquery'
+    'jquery'          : '../../../components/jquery/dist/jquery'
     'spec'            : '../spec'
     'chai'            : '../../../components/chai/chai'
     'sinonChai'       : '../../../components/sinon-chai/lib/sinon-chai'
