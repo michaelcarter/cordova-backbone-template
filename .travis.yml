@@ -4,8 +4,8 @@ cache:
   - node_modules
   - components
 install:
-- npm install -g
-- npm install
+- npm install -g --production
+- npm install --production
 - bower install
 script:
 - grunt build
