@@ -1,3 +1,6 @@
+## 0.2.3
+ - Bumped Cordova version to 3.4
+
 ## 0.2.2
  - Fixed issue where calling `grunt` with no args wouldn't trigger a default action.
 
