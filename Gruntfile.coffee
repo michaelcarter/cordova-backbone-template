@@ -26,6 +26,14 @@ config = (grunt) ->
         "no-write": true
       src: ["!www/config.xml", "!www/js/spec/index.html", "!www/js/spec/lib/*.js", "www/*"]
 
+  copy:
+    img:
+      files: [
+        expand: true
+        cwd: 'assets/img/'
+        src: ['**/*']
+        dest: 'www/img/'
+      ]
 
   coffee:
     dist:
@@ -85,6 +93,9 @@ config = (grunt) ->
       tasks: ['less']
       options:
         spawn: true
+    img:
+      files: ['assets/img/**/*']
+      tasks: ['copy:img']
     htmlbuild:
       files: ['assets/public/**/*.html']
       tasks: ['htmlbuild']
