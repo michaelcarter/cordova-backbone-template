@@ -118,6 +118,7 @@ module.exports = (grunt) ->
   grunt.registerTask('default', ['build'])
 
   grunt.registerTask('build', [
+    'copy'
     'coffee'
     'requirejs'
     'less'
