@@ -1,4 +1,4 @@
-# Cordova Backbone Template (v0.2.3)
+# Cordova Backbone Template (v0.3.0)
 
 [![Build Status](https://travis-ci.org/holidayextras/cordova-backbone-template.png)](https://travis-ci.org/holidayextras/cordova-backbone-template)
 

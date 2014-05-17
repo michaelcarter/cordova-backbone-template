@@ -1,3 +1,8 @@
+## 0.3.0
+ - Upgrade all bower and npm modules.
+ - Altered demo app a bit.
+ - Added grunt watch and build tasks for copying images across from assets/img/.
+
 ## 0.2.3
  - Bumped Cordova version to 3.4
 
