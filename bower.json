@@ -1,15 +1,16 @@
 {
   "name": "WidgetApp",
   "dependencies": {
-    "backbone": "1.1.0",
-    "requirejs": "~2.1.10",
-    "jquery": "~2.1.0",
-    "backbone.hammer": "~0.1.0",
-    "hammerjs": "1.0.5",
+    "backbone": "~1.1.2",
+    "requirejs": "~2.1.11",
+    "jquery": "~2.1.1",
+    "backbone.hammer": "~0.2.0",
+    "hammerjs": "~1.1.2",
     "lodash": "~2.4.1",
-    "chai": "~1.9.0",
+    "chai": "~1.9.1",
     "sinon-chai": "~2.5.0",
-    "mocha": "~1.17.1",
-    "sinon": "~1.8.2"
+    "mocha": "~1.18.2",
+    "sinon": "~1.9.1",
+    "jquery-hammerjs": "~1.1.2"
   }
 }

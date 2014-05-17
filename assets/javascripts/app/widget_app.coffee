@@ -1,6 +1,8 @@
 define (require, exports, module) ->
 
   # Makes touch events in Backbone easy, see: https://github.com/wookiehangover/backbone.hammer
+  require('hammerjs')
+  require('jquery-hammerjs')
   require('backbone-hammer')
 
   _            = require('underscore')
