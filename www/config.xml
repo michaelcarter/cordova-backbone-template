@@ -1,4 +1,4 @@
-<widget id="com.WidgetCorp.WidgetApp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets">
+<widget id="com.WidgetCorp.WidgetApp" version="0.3.1" xmlns="http://www.w3.org/ns/widgets">
   <name>WidgetApp</name>
   <description>
     An sample Apache Cordova + Backbone application.
