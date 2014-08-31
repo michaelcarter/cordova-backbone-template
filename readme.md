@@ -131,6 +131,7 @@ For more info, see the [grunt-contrib-copy](https://github.com/gruntjs/grunt-con
 ## Projects built from this template
 
 * [The Holiday Extras App](https://play.google.com/store/apps/details?id=com.HolidayExtras.Tripapp)
+* [Group Track](https://play.google.com/store/apps/details?id=co.uk.thedumbterminal.grouptracker)
 
 ## Thanks
 
