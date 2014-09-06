@@ -1,6 +1,6 @@
 {
   "name": "WidgetApp",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Dem widgets",
   "author": "mike@mcarter.me",
   "license": "MIT",
@@ -8,23 +8,23 @@
   "dependencies": {
     "grunt": "~0.4.5",
     "grunt-cli": "~0.1.13",
-    "bower": "~1.3.3",
-    "cordova": "~3.4.1-0.1.0",
+    "bower": "~1.3.9",
+    "cordova": "~3.5.0-0.2.7",
     "grunt-html-build": "~0.3.2",
-    "grunt-contrib-connect": "~0.7.1",
-    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-contrib-coffee": "~0.11.1",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-less": "~0.9.0",
-    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-less": "~0.11.4",
+    "grunt-contrib-cssmin": "~0.10.0",
     "grunt-requirejs": "~0.4.2",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-mocha-phantomjs": "~0.5.0",
-    "debug": "~0.8.1",
-    "send": "~0.3.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-mocha-phantomjs": "~0.6.0",
+    "debug": "~2.0.0",
+    "send": "~0.8.5",
     "grunt-contrib-copy": "~0.5.0"
   },
   "devDependencies": {
-    "ios-deploy": "~1.0.8",
-    "ios-sim": "~1.9.0"
+    "ios-deploy": "~1.1.0",
+    "ios-sim": "~2.0.1"
   }
 }
