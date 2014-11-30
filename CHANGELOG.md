@@ -1,3 +1,7 @@
+## 0.4.0
+ - Upgrade Cordova to latest 4.x.x release.
+ - Check functionality on Yosemite and new XCode.
+
 ## 0.3.0
  - Upgrade all bower and npm modules.
  - Altered demo app a bit.
