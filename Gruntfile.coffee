@@ -34,18 +34,12 @@ config = (grunt) ->
         src: ['**/*']
         dest: 'www/img/'
       ]
-
-  coffee:
-    dist:
-      options:
-        sourceMap: true
+    js:
       files: [
         expand: true
-        flatten: false
-        cwd: 'assets/javascripts'
-        src: ['**/*.coffee']
-        dest: 'www/js'
-        rename: (dest, src) -> "#{dest}/#{src.replace(/\.coffee$/, '.js')}"
+        cwd: 'assets/javascripts/'
+        src: ['**/*.js']
+        dest: 'www/js/'
       ]
 
   less:
@@ -85,9 +79,9 @@ config = (grunt) ->
     nerds: ['www/js/spec/index.html']
 
   watch:
-    coffee:
-      files: ['assets/javascripts/**']
-      tasks: ['coffee']
+    js:
+      files: ['assets/javascripts/**/*']
+      tasks: ['copy:js']
     less:
       files: ['assets/stylesheets/**/*.less']
       tasks: ['less']
@@ -105,7 +99,6 @@ module.exports = (grunt) ->
   grunt.initConfig(config(grunt))
 
   grunt.loadNpmTasks('grunt-requirejs')
-  grunt.loadNpmTasks('grunt-contrib-coffee')
   grunt.loadNpmTasks('grunt-contrib-clean')
   grunt.loadNpmTasks('grunt-contrib-copy')
   grunt.loadNpmTasks('grunt-contrib-less')
@@ -119,7 +112,6 @@ module.exports = (grunt) ->
 
   grunt.registerTask('build', [
     'copy'
-    'coffee'
     'requirejs'
     'less'
     'cssmin'
@@ -127,7 +119,7 @@ module.exports = (grunt) ->
   ])
 
   grunt.registerTask('server', [
-    'coffee'
+    'copy:js'
     'connect:web'
   ])
 

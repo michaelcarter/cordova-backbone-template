@@ -1,3 +1,6 @@
+## 1.0.0
+ - Remove use of Coffeescript from project. Pure JS now.
+
 ## 0.4.0
  - Upgrade Cordova to latest 4.x.x release.
  - Check functionality on Yosemite and new XCode.

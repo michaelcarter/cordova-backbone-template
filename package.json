@@ -1,6 +1,6 @@
 {
   "name": "WidgetApp",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Dem widgets",
   "author": "mike@mcarter.me",
   "license": "MIT",
@@ -12,7 +12,6 @@
     "cordova": "~4.1.2",
     "grunt-html-build": "~0.3.2",
     "grunt-contrib-connect": "~0.9.0",
-    "grunt-contrib-coffee": "~0.12.0",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-contrib-less": "~0.12.0",
     "grunt-contrib-cssmin": "~0.10.0",

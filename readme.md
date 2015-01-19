@@ -1,26 +1,28 @@
-# Cordova Backbone Template (v0.4.0)
-
-[![Build Status](https://travis-ci.org/holidayextras/cordova-backbone-template.png)](https://travis-ci.org/holidayextras/cordova-backbone-template)
+# Cordova Backbone Template (v1.0.0)
 
 ## What is it?
 
-This goal of this repository is to jump start you past all the complexity of setting up a Cordova app and project workflow. You should be able to download, compile and run the project on iOS or Android in a few commands, and easily get developing and making changes using JavasScript and Backbone.js straight away.
+This goal of this repository is to jump start you past all the complexity of setting up a Cordova app and project workflow. You should be able to download, compile and run the project on iOS or Android in a few commands, and easily get developing and making changes to your mobile app straight away.
 
-We've chosen Backbone for this template project as it's **1.** simple, **2.** well documented, **3.** widely used and **4.** not too heavily prescribed in terms of application architecture/best practices. It's also what I'm most familiar with...
+I've chosen Backbone as a framework for this template project for the following reasons: 
 
-As it comes, this project also uses Coffeescript (which is auto-converted to JS by a grunt task) because we feel it's nicer to write object-oriented web applications in. If you don't want to use it, see the section below on removing it.
+ - Backbone is simple to understand.
+ - Backbone doesn't prescribe the architecture of your application too heavily.
+ - Backbone is widely used
+ - Backbone is easy to extend, manipulate and use alongside other libraries, which you will probably eventually want to do when your app gets over a certain size.
+ 
 
 ## Installation/Running
 
-### Other Dependencies
- * For iOS releases, [XCode](https://developer.apple.com/xcode/), and the Xcode Command Line Tools (Google for loads instructions on installing these)
- * For Android releases, [The Android SDK](http://developer.android.com/sdk/index.html)
- * [NodeJS](http://nodejs.org/)
+### Prerequisites
+ * **[NodeJS](http://nodejs.org/)**
+ * For iOS releases:
+   - **[XCode](https://developer.apple.com/xcode/)**
+   - **Xcode Command Line Tools** (Google for lots of instructions on installing these).
+ * For Android releases:
+   - **[The Android SDK](http://developer.android.com/sdk/index.html)**
  
-With these, you should be able to run the following commands to get the included sample project up and running.
-
 ### Running on a device or simulator
-
 Installing node/bower dependencies (both locally and globally for node):
 
 ```
@@ -29,7 +31,7 @@ npm install
 bower install
 ```
 
-Getting your app ready for compilation:
+Building your JavaScript:
 
 ```
 grunt build
@@ -48,14 +50,14 @@ cordova platforms add ios
 cordova platforms add android
 ```
 
-Building your application for ios or android:
+Building your application for iOS or Android:
 
 ```
 cordova build ios
 cordova build android
 ```
 
-Running your app in an ios or android simulator:
+Running your app in an iOS or Android simulator:
 
 ``` 
 cordova emulate ios
@@ -73,12 +75,12 @@ cordova run android
 
 ### Automating your workflow with grunt tasks
 
-When making an application from this template, you'll largely be editing source in the `assets` folder, which will then be automatically compiled/converted into relevant JavaScript and CSS for running. In order to automate this process and streamline your workflow, there are some helpful grunt tasks included:
+When making an application from this template, you'll largely be editing source in the `assets` folder, which will then be automatically moved into its correct position in the `www` folder for Cordova. In order to automate this process and streamline your workflow, there are some helpful grunt tasks included:
 
 ```
 grunt watch
 ```
-This will watch the assets folder for code changes, and convert/copy your coffeescript, less and images on the fly.
+This will watch the assets folder for code changes, and copy your JS, less and images on the fly.
 
 ```
 grunt server
@@ -89,24 +91,11 @@ With these two tasks running, code changes you make in `assets` are ready to vie
 
 ### Running your tests
 
-The default template includes a couple of very basic Mocha/Chai/Sinon tests to get you going, you'll find these in `assets/javascripts/spec`, and they can be run with the `grunt test` command. When adding new test files, be sure to include them in `assets/javascripts/spec/app_spec.coffee` or they will not be run. 
+The default template includes a couple of very basic Mocha/Chai/Sinon tests to get you going, you'll find these in `assets/javascripts/spec`, and they can be run with the `grunt test` command. When adding new test files, be sure to include them in `assets/javascripts/spec/app_spec.js` or they will not be run. 
 
-Your tests are converted from coffeescript to javascript the same way your application code is, so be sure to keep your `grunt watch` task running while working on them, or run `grunt build` before you run them each time to see changes. 
+Your tests are copied across to `www/` the same way your application code is, so be sure to keep your `grunt watch` task running while working on them, or if you don't want to run the watch task, run `grunt build` before you run them each time to see changes. 
 
 With `grunt server` running, you can also access your tests at `http://localhost:5000/js/spec`.
-
-### Technologies/Libraries used in the vanilla template
-
- * Coffeescript
- * Less
- * RequireJs
- * Backbone
- * JQuery
- * Underscore
- * HammerJS
- * Mocha
- * Chai
- * Sinon
 
 ### Adding new libraries
 
@@ -119,14 +108,7 @@ npm install my-desired-module --save
 
 Use `bower` for libraries and modules you want to be available in your application, these are installed into the `components` directory. Use `node` for ones you want as part of your development workflow (this includes running tests), these are installed into the `node_modules` directory.
 
-For any bower components you want to use in your project, you'll need to configure them for use with requirejs, to do this. Add them to your `assets/javascripts/app/require_config.coffee` file. If you're struggling with this, [read up on how requirejs works](http://requirejs.org/).
-
-
-## Working without Coffeescript
-
-If you don't want to use coffeescript, you can replace the `coffee` task in your project's `Gruntfile.coffee` with a `copy` task to copy across your .js files instead.
-
-For more info, see the [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) project, or copy and modify an existing `copy` task from this project's gruntfile.
+For any bower components you want to use in your project, you'll need to configure them for use with requirejs, to do this. Add them to your `assets/javascripts/app/require_config.js` file. If you're struggling with this, [read up on how requirejs works](http://requirejs.org/).
 
 ## Projects built from this template
 
@@ -134,5 +116,4 @@ For more info, see the [grunt-contrib-copy](https://github.com/gruntjs/grunt-con
 * [Group Track](https://play.google.com/store/apps/details?id=co.uk.thedumbterminal.grouptracker)
 
 ## Thanks
-
-Major thanks to [Sam Breed](https://twitter.com/sambreed) of [QuickLeft](http://quickleft.com/) for bringing us up to speed on all things Cordova. If you're looking for a more minimal template you should definitely check out their [cordova-project-template](https://github.com/quickleft/cordova-project-template) repository.
+Major thanks to [Sam Breed](https://twitter.com/sambreed) of [QuickLeft](http://quickleft.com/) for bringing me up to speed on all things Cordova.
