@@ -1,8 +1,11 @@
 # Cordova Backbone Template (v1.0.0)
+![Cordova](https://raw.githubusercontent.com/michaelcarter/cordova-backbone-template/master/github/cordova.png)
+![Backbone](https://raw.githubusercontent.com/michaelcarter/cordova-backbone-template/master/github/backbone.png)
+![JavaScript](https://raw.githubusercontent.com/michaelcarter/cordova-backbone-template/master/github/javascript.png)
 
 ## What is it?
 
-This goal of this repository is to jump start you past all the complexity of setting up a Cordova app and project workflow. You should be able to download, compile and run the project on iOS or Android in a few commands, and easily get developing and making changes to your mobile app straight away.
+This goal of this repository is to jump start you past all the complexity of setting up a Cordova app and project workflow and get you straight to building. You should be able to download, compile and run the project on iOS or Android in a few commands, and easily get developing and making changes to your mobile app straight away.
 
 I've chosen Backbone as a framework for this template project for the following reasons: 
 
